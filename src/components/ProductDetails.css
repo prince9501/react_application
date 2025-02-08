@@ -1,0 +1,11 @@
+.product-details {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.product-details img {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+}
