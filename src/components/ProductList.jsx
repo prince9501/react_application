@@ -10,7 +10,7 @@ const ProductList = () => {
     // Fetch products from Fake Store API
     axios.get('https://fakestoreapi.com/products')
       .then((response) => {
-        setProducts(response.data); // Ensure data is being set correctly
+        setProducts(response.data); 
       })
       .catch((error) => {
         console.error('Error fetching products:', error);
