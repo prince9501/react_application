@@ -11,7 +11,7 @@ const ProductDetails = () => {
     // Fetch product details from Fake Store API
     axios.get(`https://fakestoreapi.com/products/${id}`)
       .then((response) => {
-        setProduct(response.data); // Ensure data is being set correctly
+        setProduct(response.data); 
       })
       .catch((error) => {
         console.error('Error fetching product details:', error);
@@ -19,7 +19,7 @@ const ProductDetails = () => {
   }, [id]);
 
   if (!product) {
-    return <div>Loading...</div>; // This is why you see "Loading..."
+    return <div>Loading...</div>; 
   }
 
   return (
